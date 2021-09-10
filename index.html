@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                My survey form
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us to improve the plateform
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+            
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest"> 1) Are you satisfied with the teaching staff and their teaching?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="Extremely satisfied">Extremely satisfied</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Dissatisfied">Dissatisfied</option>
+                    <option value="Extremely Dissatisfied">Extremely Dissatisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest"> 2) How satisfied are you with the facilities provided by the college?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select current role</option>
+                    <option value="Extremely satisfied">Extremely satisfied</option>
+                    <option value="Satisfied">Satisfied</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Dissatisfied">Dissatisfied</option>
+                    <option value="Extremely Dissatisfied">Extremely Dissatisfied</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+            <div class="form-group">
+                <p id="quest"> 3) What do you think about extracurricular activities?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select</option>
+                    <option value="Extremely satisfied">They are too few</option>
+                    <option value="Satisfied">They are just right</option>
+                    <option value="Neutral">I was overwhelmed with the number</option>
+                    </select>
+            </div>
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest"> 4) Was it easy to obtain the necessary resources from the college library?</p>
+                <label for="">
+                    <input type="radio" name="source" value="freinds"
+                    class="inputRadio"
+                    checked> YES
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="tv-ads"
+                    class="inputRadio"
+                    >NO
+                </label>
+  
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest"> 5) How satisfied are you with the accommodation? </p>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="front-end-dev"> Extremely satisfied
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="back-end-dev"> Satisfied
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="app-dev">  Neutral
+
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="soft-engineering"> Dissatisfied
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="otr"> Extremely dissatisfied
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="quest"> 6) What do you think of the hostel? </p>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="frontnd-dev"> Extremely crowded
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="ba"> Somewhat crowded
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="adev">  Not so crowded
+
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="soneering"> Not at all crowded
+                </label>
+               
+            </div>
+            <!-- End of checkbox section -->
+            <div class="form-group">
+                <p id="quest"> 7) Do you think that the college takes enough measures to curb racial and ethnic bias?</p>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="frev"> Definitely, Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="bacdev"> Probably, Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="ap">  Probably, No
+
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="sofring"> Definitely, No
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="oer"> Can’t say
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="quest"> 8) How many hours a week do you work your part-time job?</p>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="frev"> I don’t have a job
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="bacdev"> 1-10 hours a week
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="ap">  11-15 hours a week
+
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="sofring"> 16-20 hours a week
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="oer"> More than 20 hours a week
+                </label>
+            </div>
+            <div class="form-group">
+                <p id="quest"> 9) How about your overall experience with this college?</p>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="frev"> I don’t have a job
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="bacdev"> No, I manage them both well
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="ap">  Yes, but rarely
+
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="sofring"> Yes, often
+                </label>
+                <label for="">
+                    <input type="radio" name="prefer" class="checkbox" value="oer"> Yes, always
+                </label>
+            </div>
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest"> 10) Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
